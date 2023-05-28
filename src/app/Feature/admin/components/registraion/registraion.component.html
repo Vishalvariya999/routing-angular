@@ -1,0 +1,29 @@
+<!-- <p>registraion works!</p> -->
+<div class="container">
+    <h1 class="text-center">Template Drriven Form</h1>
+    <form class="row g-2" action="" #frm="ngForm" (ngSubmit)="submit(frm)">
+        <div class="col-6">
+            <label class="form-label" for="">Roll no</label>
+            <input class="form-control" type="number" name="rno">
+        </div>
+        <div class="col-6">
+            <label class="form-label" for="">firstName :</label>
+            <input class="form-control" type="text" name="firstName">
+        </div>
+        <div class="col-6">
+            <label class="form-label" for="">lastName :</label>
+            <input class="form-control" type="text" name="lastName">
+        </div>
+        <div class="col-6">
+            <label class="form-label" for="">E-mail</label>
+            <input class="form-control" type="email" name="studemail">
+        </div>
+        <div class="col-6">
+            <label class="form-label" for="">City</label>
+            <select class="form-select" name="city" id="city">
+                <option value="" *ngFor="let city of cities" [value]="city.id">{{city.name}}</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-md btn-primary my-2">Submit</button>
+    </form>
+</div>

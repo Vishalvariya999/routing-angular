@@ -1,0 +1,45 @@
+<!-- <h1>Admin Module/Admin-child works!</h1> -->
+<div class="container">
+  <h1 class="h1">Cities List</h1>
+  <!-- <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Population</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let citieData of citiesData">
+                <td>{{citieData.id}}</td>
+                <td>{{citieData.name}}</td>
+                <td>{{citieData.population}}</td>
+                <td>
+                    <button class="btn btn-md btn-primary" (click)="visiteCitie(citieData.id)"
+                        [routerLink]="'admin-child2'">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+  <div class="d-flex flex-wrap flex-row">
+    <div *ngFor="let citieData of citiesData">
+      <div class="card mx-2 my-2" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title text-danger">{{ citieData.id }}</h5>
+          <h6 class="card-text fw-bold">{{ citieData.name }}</h6>
+          <p class="card-text">{{ citieData.population }}</p>
+          <button
+            (click)="cityDetails(citieData.id)"
+            class="btn btn-primary cursor-pointer"
+          >
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a routerLink="registration">Goto Registratoion Page</a>
+<router-outlet></router-outlet>

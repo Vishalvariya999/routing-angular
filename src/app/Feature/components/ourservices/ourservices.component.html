@@ -1,0 +1,14 @@
+<!-- <p>ourservices works!</p> -->
+<div class="services">
+    <h1>{{servtitle1}}</h1>
+    <span class="headerline"></span>
+    <div class="boxes">
+        <div class="divcontent divcontent2" *ngFor="let servicelist of servicelists">
+            <div class="flex">
+                <img [src]="servicelist.image">
+                <h2>{{servicelist.title}}</h2>
+            </div>
+            <p>{{servicelist.description}}</p>
+            <a href="#">{{servicelist.button}}</a>
+        </div>
+    </div>

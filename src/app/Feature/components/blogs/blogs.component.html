@@ -1,0 +1,19 @@
+<!-- <p>blogs works!</p> -->
+<div class="blogs">
+    <h1>{{ourBlogsHead}}</h1>
+    <span class="headerline"></span>
+    <div class="blogs">
+        <div class="bloggers">
+            <div class="blog" *ngFor="let blog of blogs">
+                <img [src]="blog.image">
+                <div style="display: flex;justify-content: space-between;">
+                    <button>{{blog.button}}</button>
+                    <p>{{blog.date}}</p>
+                </div>
+                <h3>{{blog.head1}}</h3>
+                <p>{{blog.des}}</p>
+                <a href="#">{{blog.endbtn}}</a>
+            </div>
+        </div>
+    </div>
+</div>

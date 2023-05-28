@@ -1,0 +1,12 @@
+<!-- <p>address works!</p> -->
+<div class="formdetail">
+  <div class="address">
+    <div class="place" *ngFor="let address of addresses">
+      <h6>{{ address.head }}</h6>
+      <p class="add-city">{{ address.add }}</p>
+      <a href="tel:+91 99138 08285" class="contact mobile-no"
+        ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{ address.number }}
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<!-- <p>ourtechnologies works!</p> -->
+<h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{tech.head}}</h1>
+<span class="headerline"></span>
+<div class="row">
+    <div class="menu">
+        <ul>
+            <li *ngFor="let technology of tecnologies"><a href="">{{technology}}</a></li>
+        </ul>
+    </div>
+    <div class="language">
+        <div class="web">
+            <h1>{{tech.subHead}}</h1>
+            <h2 style="margin-top: 20px;font-weight: 400;">{{tech.title1}}</h2>
+            <div class="backend">
+                <div class="ror" *ngFor="let backend of backends">
+                    <img [src]="backend.image" alt="ror">
+                    <h3>{{backend.title}}</h3>
+                </div>
+            </div>
+            <h2>{{tech.title2}}</h2>
+            <div class="frontend">
+                <div class="react" *ngFor="let frontend of frontends">
+                    <img [src]="frontend.image">
+                    <h3>{{frontend.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<!-- <p>navbar works!</p> -->
+<div class="header">
+    <nav>
+        <ul>
+            <img src="../assets/images/tagline.png">
+            <!-- <li *ngFor="let navbaritem of navbarItems"><a href="#">{{ navbaritem }}</a>
+                <select></select>
+            </li> -->
+            <li><a [routerLink]="'/'" routerLinkActive="isActive" [routerLinkActiveOptions]="{exact:
+                true}">Home</a></li>
+            <li><a [routerLink]="'services'" routerLinkActive="isActive">Our Services</a></li>
+            <li><a [routerLink]="'ourtechnogies'" routerLinkActive="isActive">Our Technologies</a></li>
+            <li><a [routerLink]="'ourbest'" routerLinkActive="isActive">Our Best</a></li>
+            <li><a [routerLink]="'ourblog'" routerLinkActive="isActive">Our Blogs</a></li>
+            <li><a [routerLink]="'about'" routerLinkActive="isActive">About Us</a></li>
+            <li><a [routerLink]="'/admin'" routerLinkActive="isActive">Admin</a></li>
+            <!-- <div class="btnget">
+                <button [type]="btntype" style="display: flex; justify-content: end;">GET QUOTE</button>
+            </div> -->
+        </ul>
+    </nav>
+</div>

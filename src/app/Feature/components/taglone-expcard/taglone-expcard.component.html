@@ -1,0 +1,14 @@
+<!-- <p>taglone-expcard works!</p> -->
+<h1 class="taglinewhyhead">{{chooseHead}}</h1>
+<span class="headerline"></span>
+<p class="taglinewhyp">{{chooseDes}}</p>
+<div class="empowers">
+    <div class="empowerbox" *ngFor="let choose of chooses">
+        <div class="imgnumflex">
+            <img [src]="choose.image">
+            <h1>{{choose.title1}}</h1>
+        </div>
+        <h2>{{choose.title2}}</h2>
+        <p>{{choose.des}}</p>
+    </div>
+</div>
